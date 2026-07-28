@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thouseef Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init({
+            publicKey: "1TXxqqmgEz1hcNGBp",
+          });
+       })();
+    </script>
+</head>
+
+<body>
+    <header id="parent">
+        <div class="child1">
+            <h1>Mahammad Thouseef</h1>
+        </div>
+        <nav class="child2">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#project">Project</a>
+            <a href="#skill">Skill</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero-content">
+            <div class="main-container">
+                <h1>Thouseef</h1>
+                <h2>Frontend Devolopper</h2>
+                <p>I am a passionate web development learner with a strong interest in creating modern, responsive, and
+                    user-friendly websites. I enjoy solving problems through code and continuously improving my skills.
+                </p>
+
+            </div>
+            <div class="photo-section">
+                <img src="/thouseef.jpeg">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-section">
+            <div class="about-top">
+                <p class="eyebrow">Who I Am</p>
+                <h1>About Me</h1>
+                <p>Learn more about my background, skills, and what drives my work.</p>
+            </div>
+            <div class="about-bottom">
+                <div class="about-card">
+                    <img src="/WhatsApp Image 2026-07-28 at 9.49.59 AM.jpeg" alt="Mahammad Thouseef">
+                    <div class="about-card-title">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <h3>Iam Mahammad Thouseef</h3>
+                    <p>Currently, I am learning HTML, CSS, JavaScript, and building real-world projects to strengthen my
+                        frontend development knowledge. My goal is to become a skilled Full Stack Developer and
+                        contribute to meaningful software projects.</p>
+                    <p>
+                        I believe that consistency, curiosity, and continuous learning are the keys to success. Every
+                        project I build helps me gain new experience and become a better developer.</p>
+                        <h3>My Goal</h3>
+                        <p>To build high-quality web applications, learn modern technologies, and grow as a professional software developer while continuously improving my technical and problem-solving skills.</p>
+
+                    <div class="about-highlights">
+                        <div><strong>0+</strong><span>Years experience</span></div>
+                        <div><strong>0+</strong><span>Projects completed</span></div>
+                        <div><strong>3</strong><span>Languages</span></div>
+                    </div>
+                    <div class="about-details">
+                        <div>
+                            <p><strong>Age:</strong> 22</p>
+                            <p><strong>Location:</strong> Mangalore, Karnataka</p>
+                            <p><strong>Email:</strong> mhad.thouseef@gmail.com</p>
+                        </div>
+                        <div>
+                            <p><strong>Phone:</strong> +91 9900927530</p>
+                            <p><strong>Freelance:</strong> Available</p>
+                            <p><strong>Languages:</strong> English, Kannada, Malayalam</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section id="project">
+        <div class="project-section">
+            <div class="section-top">
+                <p class="eyebrow">Selected Work</p>
+                <h1>My Projects</h1>
+                <p>Featured work that demonstrates my approach to design, development, and user experience.</p>
+            </div>
+            <div class="project-grid">
+                 <article class="project-card">
+                     <div class="project-card-header">
+                        <h3>Localynk</h3>
+                    </div>
+                    <p>A comprehensive labour management ecosystem facilitating real-time coordination, dynamic
+                        scheduling, and automated billing for local services.</p>
+                    <div class="project-meta">
+                        <span>Java</span>
+                        <span>MySQL</span>
+                        <span>Team Workflow</span>
+                    </div> -->
+                    <!-- <a class="project-link" href="https://github.com/thouseef7863-pixel/linkynk.git"
+                        target="_blank">View GitHub Repo</a> -->
+                <!-- </article> -->
+                <!-- <article class="project-card">
+                    <div class="project-card-header">
+                        <h3>Portfolio Website</h3>
+                    </div>
+                    <p>A responsive personal portfolio built with HTML and CSS to showcase projects, skills, and contact
+                        details in a polished layout.</p>
+                    <div class="project-meta">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Responsive Design</span>
+                    </div>
+                    <a class="project-link" href="#contact">Contact Me</a>
+                </article>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="contact">
+        <div class="contact-section">
+            <div class="contact-card">
+                <div class="section-top">
+                    <p class="eyebrow">Get In Touch</p>
+                    <h1>Contact Me</h1>
+                    <p>Let's work together on your next project. Send a message and I'll get back to you soon.</p>
+                </div>
+                <div class="contact-details">
+                    <p><strong>Email:</strong> mhad.thouseef@gmail.com</p>
+                    <p><strong>Phone:</strong> +91 9900927530</p>
+                    <p><strong>Location:</strong> Mangalore, Karnataka</p>
+                    <p><strong>Freelance:</strong> Available</p>
+                </div>
+            </div>
+            <form class="contact-form" action="">
+                <div class="form-grid">
+                    <input type="text" placeholder="Your Name" required id="name">
+                    <input type="email" placeholder="Your Email" required id="email">
+                </div>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="button" onclick="sendMail()">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>© 2026 Mahammad Thouseef. All rights reserved.</p>
+
+        </div>
+    </footer>
+</body>
+
+</html>
